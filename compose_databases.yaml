@@ -20,8 +20,6 @@ services:
 #   - dbsocket:/var/run/mysqld/
   env_file:
    - ${ENV_VARS_DIRECTORY}/.env_db_mysql
-  environment:
-   - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/MYSQL_ROOT_PASSWORD
   secrets:
    - MYSQL_USER
    - MYSQL_PASSWORD
